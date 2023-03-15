@@ -4,7 +4,7 @@
 
 As of jsPsych version 7, the main shareable units of development are *plugins* and *extensions*. A researcher can publish their plugins and extensions on `npm` and there's a standardized way of interacting with these that is well documented.
 
-Researchers are often after a different unit of shareability, which might be an entire task. The hello, world examples of this for psych research would be something like a Stroop task or a Big 5 inventory. Right now, if you want to share something like this you typically share the entire set of code for the experiment. The [Niv lab repository](https://nivlab.github.io/jspsych-demos/) is a wonderful example of this kind of resource. 
+Researchers are often after a different unit of shareability, which might be an entire task. The *hello, world* examples of this for psych research would be something like a Stroop task or a Big 5 inventory. Right now, if you want to share something like this you typically share the entire set of code for the experiment. The [Niv lab repository](https://nivlab.github.io/jspsych-demos/) is a wonderful example of this kind of resource. 
 
 ## Where we could go
 
