@@ -53,6 +53,11 @@ timeline.push(flanker);
 
 This behaves exactly like a plugin, which is both good and bad. Easy for people to use, but also potentially confusing. It would also require some changes to the core library to support this new kind of type. 
 
+## Some problems
+
+1. How do we handle plugin dependencies? If my shareable timeline uses plugin *X* then do I need to include that plugin in my root document? I don't think I should, but then there's the issue of when I load plugin *X* anyways because I'm using it in a different part of my timeline. What if there is a version conflict?
+2. How do we pass the jsPsych reference in a way that isn't clunky? Presumably the timeline will need this.
+
 ## How to get there
 
 A few steps I have in mind:
