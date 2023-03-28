@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "A template for a shareable, configurable jsPsych timeline",
   "type": "module",
-  "main": "src/index.mjs",
-  "types": "src/index.d.ts",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "unpkg": "dist/index.global.js",
   "scripts": {
     "build": "tsup src/index.ts --format esm,iife --sourcemap --dts --treeshake --clean --global-name jsPsychTimelineArrowFlankerTask"
