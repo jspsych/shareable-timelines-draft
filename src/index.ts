@@ -1,8 +1,8 @@
 import { JsPsych } from "jspsych";
 import jsPsychHtmlKeyboardResponse from '@jspsych/plugin-html-keyboard-response'
 
-const left_arrow = `<svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path fill="white" d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z"/></svg>`;
-const right_arrow = `<svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path fill="white" d="m24 40-2.1-2.15L34.25 25.5H8v-3h26.25L21.9 10.15 24 8l16 16Z"/></svg>`;
+const left_arrow = `<svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path fill="black" d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z"/></svg>`;
+const right_arrow = `<svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path fill="black" d="m24 40-2.1-2.15L34.25 25.5H8v-3h26.25L21.9 10.15 24 8l16 16Z"/></svg>`;
 
 function createFlankerStim(direction, congruent) {
   let html = `<div class="flanker-stim">`;
