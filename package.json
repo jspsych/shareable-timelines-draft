@@ -2,10 +2,12 @@
   "name": "@jspsych/timeline-template",
   "version": "0.0.1",
   "description": "A template for a shareable, configurable jsPsych timeline",
-  "main": "src/index.ts",
+  "type": "module",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/index.global.js",
   "scripts": {
-    "test": "jest",
-    "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --platform=browser --target=es2019 --format=esm --sourcemap"
+    "build": "tsup src/index.ts --format esm,iife --sourcemap --dts --treeshake --clean --global-name jsPsychTimelineArrowFlankerTask"
   },
   "repository": {
     "type": "git",
@@ -20,9 +22,14 @@
     "url": "https://github.com/jspsych/shareable-timelines-draft/issues"
   },
   "homepage": "https://github.com/jspsych/shareable-timelines-draft#readme",
-  "dependencies": {
-    "@jspsych/plugin-html-keyboard-response": "^1.1.2",
-    "esbuild": "0.17.14",
+  "peerDependencies": {
     "jspsych": "^7.3.2"
+  },
+  "dependencies": {
+    "@jspsych/plugin-html-keyboard-response": "^1.1.2"
+  },
+  "devDependencies": {
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.2"
   }
 }
